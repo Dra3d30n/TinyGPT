@@ -18,7 +18,7 @@ from tinygpt import TinyGPT
 # CONFIG
 # ============================================================
 
-TINYGPT_PATH = "models/tiny_gpt_distilled_step_220000.npz"
+TINYGPT_PATH = "current_model/tinygpt_weights.npz"
 TOKENIZER_NAME = "mistralai/Mistral-7B-v0.1"
 
 MAX_NEW_TOKENS = 64

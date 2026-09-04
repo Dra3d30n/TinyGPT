@@ -37,6 +37,7 @@ heartbeat_thread.start()
 # ============================================================
 starting_iteration=100000
 TEACHER_MODEL = "mistralai/Mistral-7B-v0.1"
+TINYGPT_PATH = "current_model/tinygpt_weights.npz"
 
 # ------------------------------------------------------------
 # Student
@@ -221,7 +222,7 @@ print("Student vocabulary:", VOCAB_SIZE)
 
 print("\nCreating student...")
 
-student=TinyGPT.load("models/tiny_gpt_distilled_step_100000.npz")
+student=TinyGPT.load(TINYGPT_PATH)
 # student = TinyGPT(
 #     VOCAB_SIZE,
 #     SEQ_LEN,
